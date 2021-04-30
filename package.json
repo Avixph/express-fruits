@@ -1,0 +1,17 @@
+{
+  "name": "express-fruits",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Avixph/express-fruits.git",
+  "author": "Angel B. Fernandez <25628695+Avixph@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7",
+    "nodemon": "^2.0.7"
+  }
+}
