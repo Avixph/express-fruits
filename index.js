@@ -31,6 +31,14 @@ app.get("/five", (req, res) => {
 
 app.get("/evens/:n", (req, res) => {
   try {
+    const { n } = req.params;
+    let evenArr = [];
+    for (let i = 0; i <= parseInt(n); i++) {
+      if (i % 2 === 0) {
+        evenArr.push(i);
+      }
+    }
+    res.send(evenArr);
   } catch (error) {
     console.log(error);
     res.send(error.message);
